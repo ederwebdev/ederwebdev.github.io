@@ -1,0 +1,265 @@
+/*Estilo geral*/
+
+/*estilo do nav/menu, etc*/
+#primeira-img {
+    margin: -10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    
+}
+
+#ghost {
+    width: 50%;
+}
+
+
+.nav-link {
+    color: rgba(79, 192, 141, 1) !important;
+    font-size: 20px;
+    
+}
+.nav-link:hover {
+    color: #304455 !important;
+}
+
+.img-bandeira {
+    height: 5vh;
+    width: 3vw;
+}
+
+
+/*Aqui começa o estilo da página*/
+
+.space{
+    height: 10vh;
+}
+
+.welcome {
+    height: 90vh;
+    width: 98vw;
+
+    background-image: url("/images/4457.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 95%;
+
+align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.welcome-div {
+  background-color: rgba(241, 241, 241, 0.7);
+  width: 60%;
+  padding: 30px;
+
+}
+.title-welcome, .skill-title  {
+    font-size: 30px;
+    color: #4FC08D;
+    margin-top: 10px;
+
+}
+.text-welcome {
+
+    color: #304455;
+    font-size: 20px;
+
+}
+#sobre, #portifolio, #contato, footer {
+
+    height: 80vh;
+    width: 99vw;
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#sobre {
+
+    background-color: #304455;
+    
+}
+.sobre-div{
+
+    width: 60vw;
+
+}
+.sobre-div h2{
+
+    color: #4FC08D;
+    margin: 20px;
+
+}
+.sobre-div p{
+    color: #FFFDFD;
+}
+.sobre-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+#skills {
+    height: 105vh;
+    width: 99vw;
+
+    display: flex;
+    align-items: center; /* alinha os itens verticalmemte ao centro*/
+    text-align: center;
+    flex-direction: column; /* coloca os itens em coluna um abaixo do outro*/
+}
+.javascript-skill, .html-skill, .css-skill, .bootstrap-skill {
+
+    display: flex;
+    width: 50vw;
+    margin: 5px;
+    padding: 5px;
+}
+.javascript-img {
+    height: 100px;
+    width: 100px;
+    margin-right: 5px;
+}
+
+.html-img, .css-img {
+    width: 100px;
+    margin-right: 5px;
+}
+
+.bootstrap-img {
+    height: 100px;
+    margin-right: 5px;
+    
+}
+
+#portifolio {
+    background-color: #4FC08D;
+}
+#contato {
+
+}
+
+
+footer {
+
+    height: 30vh;
+    width: 100vw;
+    background-color: #304455;
+}
+
+
+
+
+/*Estilo para dispositivos móveis*/
+@media screen and (max-width: 980px) {
+    html {
+      font-size: 3rem; 
+        
+    }
+    #primeira-img {
+        margin: -30px;
+        height: 150px;
+        width: 150px;
+    }
+    #ghost {
+        width: 0%;
+    } 
+    .navbar-collapse {
+        margin-left: 0 !important;
+        padding: 10%;
+        
+    }
+    .nav-link {
+        
+        font-size: 50px;        
+        
+    }
+     
+    .navbar-toggler-icon {
+
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(79, 192, 141, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+              }
+            
+              /*rgba(79, 192, 141, 1)*/ 
+    
+    .navbar-toggler{
+
+        border: none;
+        
+    }
+    .img-bandeira {
+        width: 8vh;
+    }
+    
+    .welcome {
+        height: 90vh;
+
+        background-size: cover;
+
+        align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+    }
+    .welcome-div {
+        height: 30vh;
+        width: 70vw;
+        padding: 40px;
+    }
+    .title-welcome  {
+        font-size: 50px;
+      
+    
+    }
+    .text-welcome, .sobre-div p {
+    
+        
+        font-size: 40px;
+    
+    
+  }
+  .sobre-div{
+
+    width: 80vw; 
+  }
+  .sobre-img {
+    width: 250px;
+    height: 250px;
+  }
+  #skills {
+      height: 90vh;
+  }
+  .skill-title {
+      margin-top: 40px;
+
+  }
+  .javascript-skill, .html-skill, .css-skill, .bootstrap-skill {
+
+    width: 90vw;
+    font-size: 35px;
+}
+.javascript-img {
+    width: 200px;
+    height: 200px;
+}
+.html-img, .css-img {
+    height: 200px;
+    width: 200px;
+}
+.bootstrap-img {
+    height: 200px;
+    width: 200px;
+}
+  
+}
