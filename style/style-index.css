@@ -1,5 +1,7 @@
 /*Estilo geral*/
-
+p { 
+    position: relative;
+}
 /*estilo do nav/menu, etc*/
 #primeira-img {
     margin: -10px;
@@ -13,7 +15,9 @@
     width: 50%;
 }
 
-
+.navbar {
+    
+}
 .nav-link {
     color: rgba(79, 192, 141, 1) !important;
     font-size: 20px;
@@ -44,7 +48,7 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: 95%;
 
-align-items: center;
+  align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -57,11 +61,16 @@ align-items: center;
   padding: 30px;
 
 }
-.title-welcome, .skill-title  {
+.title-welcome, .skill-title {
     font-size: 30px;
     color: #4FC08D;
     margin-top: 10px;
 
+}
+.portifolio-title{
+    font-size: 30px;
+    color: #304455;
+    margin-top: 10px;
 }
 .text-welcome {
 
@@ -69,6 +78,7 @@ align-items: center;
     font-size: 20px;
 
 }
+
 #sobre, #portifolio, #contato, footer {
 
     height: 80vh;
@@ -110,7 +120,7 @@ align-items: center;
 }
 
 #skills {
-    height: 105vh;
+    height: 100vh;
     width: 99vw;
 
     display: flex;
@@ -118,7 +128,7 @@ align-items: center;
     text-align: center;
     flex-direction: column; /* coloca os itens em coluna um abaixo do outro*/
 }
-.javascript-skill, .html-skill, .css-skill, .bootstrap-skill {
+.js-skill, .html-skill, .css-skill, .bootstrap-skill {
 
     display: flex;
     width: 50vw;
@@ -144,9 +154,38 @@ align-items: center;
 
 #portifolio {
     background-color: #4FC08D;
-}
-#contato {
 
+    display: flex;
+    flex-direction: column;
+}
+.text-portifolio {
+    margin-bottom: 5px;
+}
+.sec-portifolio {
+    display: flex;
+    flex-direction: row;
+}
+.portifolio-item {
+    background-color: #304455;
+    border-radius: 3%;
+
+    margin: 2vw;
+    height: 30vh;
+    width: 12vw;
+
+    flex: 1 1 auto;
+    
+}
+.portifolio-item:hover {
+    margin-top: -2vw;
+    margin-bottom: -2vw;
+    
+    height: 50vh;
+    width: 20vw;
+}
+
+#contato {
+    
 }
 
 
@@ -160,7 +199,10 @@ footer {
 
 
 
-/*Estilo para dispositivos móveis*/
+/*--------------------------------------------------------------------------------------------
+----------------------------Estilo para dispositivos móveis-----------------------------------
+--------------------------------------------------------------------------------------------*/
+
 @media screen and (max-width: 980px) {
     html {
       font-size: 3rem; 
@@ -174,6 +216,9 @@ footer {
     #ghost {
         width: 0%;
     } 
+    .navbar {
+        position: relative;
+    }
     .navbar-collapse {
         margin-left: 0 !important;
         padding: 10%;
@@ -207,10 +252,10 @@ footer {
         background-size: cover;
 
         align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .welcome-div {
         height: 30vh;
@@ -238,16 +283,25 @@ footer {
     height: 250px;
   }
   #skills {
+
       height: 90vh;
+
+      display: flex;
+      flex-direction: column;
   }
-  .skill-title {
+  .skill-title, .portifolio-title {
       margin-top: 40px;
+      font-size: 1rem;
 
   }
-  .javascript-skill, .html-skill, .css-skill, .bootstrap-skill {
+  .js-skill, .html-skill, .css-skill, .bootstrap-skill {
 
+    height: 20vh;
     width: 90vw;
     font-size: 35px;
+    margin: 1vh;
+    
+    flex:1 1 auto;
 }
 .javascript-img {
     width: 200px;
@@ -261,5 +315,27 @@ footer {
     height: 200px;
     width: 200px;
 }
-  
+#portifolio {
+    
+    height: 150vh;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+.portifolio-item {
+    background-color: #304455;
+    border-radius: 3%;
+
+    flex: 1 1 auto;
+    margin: 2vw;
+    height: 10vh;
+    width: 70vw;
+    
+}
+.portifolio-item:hover{
+   
+    height: 10vh;
+    width: 70vw;
+}
 }
