@@ -15,9 +15,7 @@ p {
     width: 50%;
 }
 
-.navbar {
-    
-}
+
 .nav-link {
     color: rgba(79, 192, 141, 1) !important;
     font-size: 20px;
@@ -184,7 +182,49 @@ p {
     width: 20vw;
 }
 
-#contato {
+
+.div-contato {
+    
+
+    display: flex;
+    flex-direction: column;
+}
+.contato-item-wp, .contato-item-gm {
+    display: flex;    
+    flex-direction: row;
+    
+    align-items: center;
+
+    height: 15vh;
+    width: 25vw;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 5px;
+    overflow: hidden;
+
+    
+     
+}
+.contato-item-wp {
+    background-color: #4FC08D;
+    
+}
+.contato-item-gm {
+    
+    background-color: darksalmon;
+}
+.img-contato {
+    
+    width: 20%;
+    margin: 5px;
+    margin-right: 15px; 
+}
+.texto-item-contato {
+   
+    color: white;
+}
+.link-wp {
+    text-decoration: none !important;
     
 }
 
@@ -194,6 +234,7 @@ footer {
     height: 30vh;
     width: 100vw;
     background-color: #304455;
+
 }
 
 
@@ -205,6 +246,7 @@ footer {
 
 @media screen and (max-width: 980px) {
     html {
+
       font-size: 3rem; 
         
     }
@@ -316,26 +358,40 @@ footer {
     width: 200px;
 }
 #portifolio {
-    
+    padding: 10px;
     height: 150vh;
 
     display: flex;
     flex-direction: column;
     
 }
+.sec-portifolio {
+    display: flex;
+    flex-direction: column;
+}
 .portifolio-item {
     background-color: #304455;
     border-radius: 3%;
 
-    flex: 1 1 auto;
+    
     margin: 2vw;
-    height: 10vh;
+    height: 30vh;
     width: 70vw;
     
 }
 .portifolio-item:hover{
-   
-    height: 10vh;
+    margin: 2vw;
+    
+    height: 30vh;
     width: 70vw;
 }
+
+.contato-item-wp, .contato-item-gm {
+    width: 90vw;
+    padding: 20px !important;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
+
+}
+  
